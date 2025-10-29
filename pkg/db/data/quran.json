@@ -1,0 +1,26 @@
+{
+  "surahs": [
+    { "number": 1, "name": "الفاتحة", "englishName": "Al-Fatiha", "numberOfVerses": 7, "revelationType": "Meccan" },
+    { "number": 2, "name": "البقرة", "englishName": "Al-Baqarah", "numberOfVerses": 286, "revelationType": "Medinan" },
+    { "number": 3, "name": "آل عمران", "englishName": "Al Imran", "numberOfVerses": 200, "revelationType": "Medinan" },
+    { "number": 4, "name": "النساء", "englishName": "An-Nisa'", "numberOfVerses": 176, "revelationType": "Medinan" },
+    { "number": 5, "name": "المائدة", "englishName": "Al-Ma'idah", "numberOfVerses": 120, "revelationType": "Medinan" },
+    { "number": 6, "name": "الأنعام", "englishName": "Al-An'am", "numberOfVerses": 165, "revelationType": "Meccan" },
+    { "number": 7, "name": "الأعراف", "englishName": "Al-A'raf", "numberOfVerses": 206, "revelationType": "Meccan" },
+    { "number": 8, "name": "الأنفال", "englishName": "Al-Anfal", "numberOfVerses": 75, "revelationType": "Medinan" },
+    { "number": 9, "name": "التوبة", "englishName": "At-Tawbah", "numberOfVerses": 129, "revelationType": "Medinan" },
+    { "number": 10, "name": "يونس", "englishName": "Yunus", "numberOfVerses": 109, "revelationType": "Meccan" }
+  ],
+  "verses": [
+    { "surahNumber": 1, "verseNumber": 1, "arabicText": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", "englishText": "In the name of Allah, the Entirely Merciful, the Especially Merciful.", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/001001.mp3" },
+    { "surahNumber": 2, "verseNumber": 1, "arabicText": "الم", "englishText": "Alif, Lam, Meem.", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/002001.mp3" },
+    { "surahNumber": 3, "verseNumber": 1, "arabicText": "الم", "englishText": "Alif, Lam, Meem.", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/003001.mp3" },
+    { "surahNumber": 4, "verseNumber": 1, "arabicText": "يَا أَيُّهَا النَّاسُ", "englishText": "O mankind, fear your Lord...", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/004001.mp3" },
+    { "surahNumber": 5, "verseNumber": 1, "arabicText": "يَا أَيُّهَا الَّذِينَ آمَنُوا", "englishText": "O you who have believed...", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/005001.mp3" },
+    { "surahNumber": 6, "verseNumber": 1, "arabicText": "الْحَمْدُ لِلَّهِ الَّذِي خَلَقَ", "englishText": "[All] praise is [due] to Allah, who created...", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/006001.mp3" },
+    { "surahNumber": 7, "verseNumber": 1, "arabicText": "المص", "englishText": "Alif, Lam, Meem, Sad.", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/007001.mp3" },
+    { "surahNumber": 8, "verseNumber": 1, "arabicText": "يَسْأَلُونَكَ عَنِ الْأَنفَالِ", "englishText": "They ask you about the spoils of war...", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/008001.mp3" },
+    { "surahNumber": 9, "verseNumber": 1, "arabicText": "بَرَاءَةٌ مِنَ اللَّهِ", "englishText": "[This is a declaration of] disassociation from Allah...", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/009001.mp3" },
+    { "surahNumber": 10, "verseNumber": 1, "arabicText": "الر", "englishText": "Alif, Lam, Ra.", "translation": "Sahih International", "audioUrl": "https://everyayah.com/data/Alafasy_128kbps/010001.mp3" }
+  ]
+}

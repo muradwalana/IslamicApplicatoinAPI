@@ -1,0 +1,12 @@
+[
+  {"id":"1","collection":"bukhari","bookNumber":1,"hadithNumber":1,"arabicText":"إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ","englishText":"Actions are but by intentions","grade":"Sahih","reference":"Bukhari 1:1"},
+  {"id":"2","collection":"bukhari","bookNumber":1,"hadithNumber":2,"arabicText":"مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ","englishText":"Whoever believes in Allah and the Last Day...","grade":"Sahih","reference":"Bukhari 1:2"},
+  {"id":"3","collection":"muslim","bookNumber":1,"hadithNumber":1,"arabicText":"لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ","englishText":"None of you truly believes until he loves for his brother what he loves for himself.","grade":"Sahih","reference":"Muslim 1:1"},
+  {"id":"4","collection":"tirmidhi","bookNumber":1,"hadithNumber":1,"arabicText":"اطْلُبُوا الْعِلْمَ مِنَ الْمَهْدِ إِلَى الْلَحْدِ","englishText":"Seek knowledge from the cradle to the grave.","grade":"Hasan","reference":"Tirmidhi 1:1"},
+  {"id":"5","collection":"an-nawawi","bookNumber":1,"hadithNumber":1,"arabicText":"الدِّينُ النَّصِيحَةُ","englishText":"Religion is sincere advice.","grade":"Sahih","reference":"An-Nawawi 1:1"},
+  {"id":"6","collection":"ibnmajah","bookNumber":1,"hadithNumber":1,"arabicText":"حُبُّ الْوَطَنِ مِنَ الإِيْمَانِ","englishText":"Love of the homeland is part of faith.","grade":"Hasan","reference":"Ibn Majah 1:1"},
+  {"id":"7","collection":"abu_dawud","bookNumber":1,"hadithNumber":1,"arabicText":"الدُّعَاءُ هُوَ الْعِبَادَةُ","englishText":"Supplication is worship.","grade":"Hasan","reference":"Abu Dawud 1:1"},
+  {"id":"8","collection":"nasai","bookNumber":1,"hadithNumber":1,"arabicText":"مَنْ غَشَّ فَلَيْسَ مِنِّي","englishText":"He who cheats is not one of us.","grade":"Sahih","reference":"An-Nasa'i 1:1"},
+  {"id":"9","collection":"malik","bookNumber":1,"hadithNumber":1,"arabicText":"الحديث عن السنّة","englishText":"Hadith about the Sunnah.","grade":"Hasan","reference":"Malik 1:1"},
+  {"id":"10","collection":"darimi","bookNumber":1,"hadithNumber":1,"arabicText":"فَتَفَكَّرُوا","englishText":"So reflect.","grade":"Hasan","reference":"Darimi 1:1"}
+]

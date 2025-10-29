@@ -1,70 +1,53 @@
 package main
 
 import (
-	"net/http"
+	"log"
 
 	"github.com/gin-gonic/gin"
+
+	"islamicprojectapi/pkg/hadith"
+	"islamicprojectapi/pkg/prayer"
+	"islamicprojectapi/pkg/quran"
 )
-
-type todo struct {
-	ID   string `json:"id"`
-	Task string `json:"task"`
-	Done bool   `json:"done"`
-}
-
-var todos = []todo{
-	{ID: "1", Task: "Buy groceries", Done: false},
-	{ID: "2", Task: "Walk the dog", Done: true},
-	{ID: "3", Task: "Read a book", Done: false},
-}
-
-func getTodos(c *gin.Context) {
-	c.IndentedJSON(http.StatusOK, todos)
-}
-
-func setTodos(c *gin.Context) {
-	var newTodo todo
-
-	if err := c.BindJSON(&newTodo); err != nil {
-		return
-	}
-
-	todos = append(todos, newTodo)
-	c.IndentedJSON(http.StatusCreated, newTodo)
-}
-
-func deleteTodo(c *gin.Context) {
-	id := c.Param("id")
-
-	for i, todo := range todos {
-		if todo.ID == id {
-			todos = append(todos[:i], todos[i+1:]...)
-			c.IndentedJSON(http.StatusOK, gin.H{"message": "Todo deleted"})
-			return
-		}
-	}
-
-	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "Todo not found"})
-}
-
-func getTodoByID(c *gin.Context) {
-	id := c.Param("id")
-
-	for _, todo := range todos {
-		if todo.ID == id {
-			c.IndentedJSON(http.StatusOK, todo)
-			return
-		}
-	}
-
-	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "Todo not found"})
-}
 
 func main() {
 	router := gin.Default()
-	router.GET("/todos-get", getTodos)
-	router.POST("/todos-set", setTodos)
-	router.DELETE("/todos-delete/:id", deleteTodo)
-	router.GET("/todos-get/:id", getTodoByID)
-	router.Run("localhost:8080")
+
+	// Quran routes
+	q := router.Group("/api/quran")
+	{
+		q.GET("/surah/:number", quran.SurahHandler)
+		q.GET("/surah", quran.SurahListHandler)
+		q.GET("/verse/:surah/:number", quran.VerseHandler)
+		q.GET("/verses/:surah", quran.VersesBySurahHandler)
+		// root of /api/quran returns list of surahs
+		q.GET("/", quran.SurahListHandler)
+	}
+	// also register plain /api/quran (no trailing slash) to return list
+	router.GET("/api/quran", quran.SurahListHandler)
+
+	// Hadith routes
+	h := router.Group("/api/hadith")
+	{
+		h.GET("/:collection/:number", hadith.HadithHandler)
+		h.GET("/list", hadith.ListHadithsHandler)
+		// root of /api/hadith returns list of hadiths
+		h.GET("/", hadith.ListHadithsHandler)
+	}
+	// also register plain /api/hadith
+	router.GET("/api/hadith", hadith.ListHadithsHandler)
+
+	// Prayer Times routes
+	p := router.Group("/api/prayer")
+	{
+		p.GET("/times/:location", prayer.PrayerTimesHandler)
+		p.GET("/locations", prayer.ListLocationsHandler)
+		// root of /api/prayer returns available prayer locations (list)
+		p.GET("/", prayer.ListLocationsHandler)
+	}
+	// also register plain /api/prayer
+	router.GET("/api/prayer", prayer.ListLocationsHandler)
+
+	log.Println("Starting server on :8080")
+	router.Run("0.0.0.0:8080")
 }
